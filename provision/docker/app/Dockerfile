@@ -2,25 +2,12 @@ FROM python:3.8.0-slim
 
 ARG stage
 
-LABEL NAME zsh-cheat-$stage
+LABEL NAME zsh-cheat-app-$stage
 
 ENV USERNAME developer
 
 ENV PACKAGES bash \
-  git \
-  gcc \
-  libc-dev \
-  make \
-  musl-dev \
-  openssl \
-  gcc \
-  libgdal20 \
-  libev-dev \
-  curl \
-  wget \
-  tar \
-  zsh \
-  jq
+  openssl
 
 ENV ZUNIT_VERSION "0.8.2"
 
