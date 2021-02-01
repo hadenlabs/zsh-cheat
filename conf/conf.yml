@@ -54,7 +54,7 @@ cheatpaths:
   # If you have personalized cheatsheets, list them last. They will take
   # precedence over the more global cheatsheets.
   - name: hadenlabs
-    path: ~/.config/cheat/cheatsheets/hadenlabs
+    path: ~/.config/cheat/cheatsheets/hadenlabs/cheatsheet
     tags: [ personal ]
     readonly: false
 
