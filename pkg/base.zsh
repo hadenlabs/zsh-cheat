@@ -7,8 +7,12 @@ function cheat::dependences {
 }
 
 function cheat::post_install {
-    message_info "Installing ${CHEAT_PACKAGE_NAME}"
-    message_success "Installed ${CHEAT_PACKAGE_NAME}"
+    cheat::cheatsheets::install
+    cheat::sync
+}
+
+function cheat::cheatsheets::install {
+    cheat::internal::cheatsheets::install
 }
 
 function cheat::sync {
