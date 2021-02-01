@@ -18,4 +18,5 @@ function cheat::internal::main::factory {
 
 cheat::internal::main::factory
 
+if ! type -p fzf > /dev/null; then cheat::internal::fzf::install; fi
 if ! type -p cheat > /dev/null; then cheat::internal::cheat::install; fi
