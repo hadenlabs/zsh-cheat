@@ -14,13 +14,11 @@ function cheat::pkg::main::factory {
         source ${ZSH_CHEAT_PATH}/pkg/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_CHEAT_PATH}"/pkg/helper.zsh
 
     # shellcheck source=/dev/null
-    source ${ZSH_CHEAT_PATH}/pkg/alias.zsh
-
-    # shellcheck source=/dev/null
-    source ${ZSH_CHEAT_PATH}/pkg/helper.zsh
-
+    source "${ZSH_CHEAT_PATH}"/pkg/alias.zsh
 }
 
 cheat::pkg::main::factory
