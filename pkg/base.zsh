@@ -16,5 +16,5 @@ function cheat::cheatsheets::install {
 }
 
 function cheat::sync {
-    rsync -avzh --progress "${ZSH_CHEAT_PATH}/conf/" "${CHEAT_CONFIG_PATH}/"
+    rsync -avzh --progress "${ZSH_CHEAT_PATH}/conf/" "${CHEAT_PATH}/"
 }
