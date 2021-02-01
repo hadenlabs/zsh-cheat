@@ -21,3 +21,22 @@ function cheat::internal::fzf::install {
     brew install fzf
     message_success "Installed fzf for ${ISSUES_PACKAGE_NAME}"
 }
+
+function cheat::internal::cheatsheets::install {
+    if ! type -p cheat > /dev/null; then
+        message_warning "it's neccesary have cheat"
+        return
+    fi
+
+    message_info "Installing required cheatpaths"
+
+    for cheatsheet in "${CHEAT_CHEATSHEETS[@]}"; do
+        message_info "Installing required cheatpath ${cheatsheet}"
+        cd "${CHEAT_CHEATSHEET_PATH}" && git clone "git@github.com:${cheatsheet}".git "${cheatsheet}"
+        message_success "Installed required cheatpath ${cheatsheet}"
+    done
+
+    cd - || exit
+
+    message_success "Installed required cheatsheet"
+}
