@@ -29,8 +29,8 @@ It's 100% Open Source and licensed under the [MIT](LICENSE).
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 ```{.sourceCode .bash}
-https://github.com/luismayta/zsh-core
-https://github.com/luismayta/zsh-notify
+https://github.com/hadenlabs/zsh-cheat
+https://github.com/hadenlabs/zsh-notify
 ```
 
 ## Installation
@@ -131,8 +131,8 @@ This project is maintained and funded by [Hadenlabs][https://hadenlabs.com]. Lik
 
 ### Contributors
 
-| [![Luis Mayta][luismayta_avatar]][luismayta_homepage]<br/>[Luis Mayta][luismayta_homepage] |
+| [![Luis Mayta][hadenlabs_avatar]][hadenlabs_homepage]<br/>[Luis Mayta][hadenlabs_homepage] |
 | ------------------------------------------------------------------------------------------ |
 
-[luismayta_homepage]: https://github.com/luismayta
-[luismayta_avatar]: https://github.com/luismayta.png?size=150
+[hadenlabs_homepage]: https://github.com/hadenlabs
+[hadenlabs_avatar]: https://github.com/hadenlabs.png?size=150
