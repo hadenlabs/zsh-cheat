@@ -3,17 +3,18 @@
 
 function cheat::pkg::main::factory {
     # shellcheck source=/dev/null
-    source ${ZSH_CHEAT_PATH}/pkg/base.zsh
+    source "${ZSH_CHEAT_PATH}"/pkg/base.zsh
     case "${OSTYPE}" in
     darwin*)
         # shellcheck source=/dev/null
-        source ${ZSH_CHEAT_PATH}/pkg/osx.zsh
+        source "${ZSH_CHEAT_PATH}"/pkg/osx.zsh
         ;;
     linux*)
         # shellcheck source=/dev/null
-        source ${ZSH_CHEAT_PATH}/pkg/linux.zsh
+        source "${ZSH_CHEAT_PATH}"/pkg/linux.zsh
       ;;
     esac
+
     # shellcheck source=/dev/null
     source "${ZSH_CHEAT_PATH}"/pkg/helper.zsh
 
