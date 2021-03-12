@@ -40,7 +40,7 @@ requirements: |-
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   ```{bash}
-  https://github.com/hadenlabs/zsh-notify
+  https://github.com/hadenlabs/zsh-core
   ```
 
 installation:
