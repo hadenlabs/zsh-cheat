@@ -3,7 +3,7 @@
 
 function cheat::internal::cheat::install {
     message_info "Installing ${CHEAT_PACKAGE_NAME}"
-    if ! type -p brew > /dev/null; then
+    if ! core::exists brew; then
         message_warning "${CHEAT_MESSAGE_BREW}"
         return
     fi
@@ -14,7 +14,7 @@ function cheat::internal::cheat::install {
 function cheat::internal::fzf::install {
     # shellcheck disable=SC2154
     message_info "Installing fzf for ${ISSUES_PACKAGE_NAME}"
-    if ! type -p brew > /dev/null; then
+    if ! core::exists brew; then
         message_warning "${ISSUES_MESSAGE_BREW}"
         return
     fi
@@ -23,7 +23,7 @@ function cheat::internal::fzf::install {
 }
 
 function cheat::internal::cheatsheets::install {
-    if ! type -p cheat > /dev/null; then
+    if ! core::exists cheat; then
         message_warning "it's neccesary have cheat"
         return
     fi
