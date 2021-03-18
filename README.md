@@ -14,23 +14,16 @@
 
 # zsh-cheat
 
-[![Build Status](https://travis-ci.org/hadenlabs/zsh-cheat.svg?branch=main)](https://travis-ci.org/hadenlabs/zsh-cheat) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-cheat.svg)](https://github.com/hadenlabs/zsh-cheat/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-cheat.svg)](https://travis-ci.org/hadenlabs/zsh-cheat/releases)
+[![Lint](https://github.com/hadenlabs/zsh-cheat/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/zsh-cheat/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-cheat.svg)](https://github.com/hadenlabs/zsh-cheat/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-cheat.svg)](https://github.com/hadenlabs/zsh-cheat/releases)
 
 zsh-cheat plugin for zsh.
-
----
-
-This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) plugins of zsh.
-
-It's 100% Open Source and licensed under the [MIT](LICENSE).
 
 ## Requirements
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-```{.sourceCode .bash}
-https://github.com/hadenlabs/zsh-cheat
-https://github.com/hadenlabs/zsh-notify
+```{bash}
+https://github.com/hadenlabs/zsh-core
 ```
 
 ## Installation
@@ -67,17 +60,35 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle hadenlabs/zsh-cheat` in a running zsh session.
 3.  Enjoy!
 
-## Usage
+## Functions
 
-```bash
-make setup
-```
+zsh cheat includes a small utility `cheat` to fetch and install new packages.
+
+#### `cheat::install`
+
+Install cheat.
+
+#### `cheat::post_install`
+
+Install sync config and cheatsheets.
+
+#### `cheat::cheatsheets::install`
+
+Install all cheatsheet to path cheat.
+
+#### `cheat::sync`
+
+sync config cheatsheet to local.
+
+#### `fcheat`
+
+search cheat using fzf.
 
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/zsh-cheat/issues), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue](https://github.com/hadenlabs/zsh-cheat/issues), send us an [email](email) or join our [Slack Community](slack).
 
 ## Contributing
 
@@ -85,9 +96,7 @@ File a GitHub [issue](https://github.com/hadenlabs/zsh-cheat/issues), send us an
 
 Please use the [issue tracker](https://github.com/hadenlabs/zsh-cheat/issues) to report any bugs or file feature requests.
 
-### Developing
-
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://hadenlabs.com) with our other projects, we would love to hear from you! Shoot us an [email](mailto:support@hadenlabs.com).
+### Development
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -99,40 +108,22 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
-### Versioning
+#### Versioning
 
-Releases are managed using github release feature. We use \[Semantic Versioning\](<http://semver.org>) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
+Releases are managed using github release feature. We use [Semantic Versioning](http://semver.org) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
 
 ## Copyright
 
 Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
 
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Source: <https://opensource.org/licenses/MIT>
-
 ## Trademarks
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## About
+## License
 
-This project is maintained and funded by [Hadenlabs][https://hadenlabs.com]. Like it? Please let us know at <support@hadenlabs.com>
+The code and styles are licensed under the MIT license [See project license.](LICENSE).
 
-### Contributors
+## Don't forget to 🌟 Star 🌟 the repo if you like zsh-cheat
 
-| [![Luis Mayta][hadenlabs_avatar]][hadenlabs_homepage]<br/>[Luis Mayta][hadenlabs_homepage] |
-| ------------------------------------------------------------------------------------------ |
-
-[hadenlabs_homepage]: https://github.com/hadenlabs
-[hadenlabs_avatar]: https://github.com/hadenlabs.png?size=150
+[Your feedback is appreciated](https://github.com/hadenlabs/zsh-cheat/issues)
