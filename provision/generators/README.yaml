@@ -45,7 +45,9 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [docker](https://www.docker.com)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
