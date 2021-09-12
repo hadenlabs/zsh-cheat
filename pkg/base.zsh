@@ -3,11 +3,13 @@
 
 function cheat::install {
     cheat::internal::cheat::install
+    cheat::post_install
 }
 
 function cheat::post_install {
     cheat::cheatsheets::install
     cheat::sync
+    cheatsheets pull
 }
 
 function cheat::cheatsheets::install {
