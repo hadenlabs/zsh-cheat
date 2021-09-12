@@ -15,6 +15,9 @@ env:
     sh: python --version
   APP_TAG:
     sh: git describe --tags $(git rev-list --tags --max-count=1) || echo "0.0.0"
+  README_YAML: provision/generators/README.yaml
+  README_TEMPLATE: provision/templates/README.tpl.md
+  README_INCLUDES: file://
 
 dotenv:
   - .env
@@ -26,8 +29,6 @@ vars:
   PYTHON_VERSION: 3.9.2
   GIT_IGNORES: python,node,go,zsh
   README_FILE: README.md
-  README_YAML: provision/generators/README.yaml
-  README_TEMPLATE: provision/templates/README.tpl.md
   GIT_IGNORES_CUSTOM: >-
     bin
     TMP_CHANGELOG.md
@@ -61,8 +62,13 @@ tasks:
   readme:
     run: once
     desc: Generate Readme
+    silent: true
     cmds:
-      - gomplate --file {{.README_TEMPLATE}} --out {{.README_FILE}} --datasource config={{.README_YAML}}
+      - >-
+        gomplate --file {{.README_TEMPLATE}}
+        --out {{.README_FILE}}
+        --datasource config={{.README_YAML}}
+        --datasource includes={{.README_INCLUDES}}
 
   setup:
     desc: Setup dependences of project
