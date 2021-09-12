@@ -8,11 +8,11 @@ colorize: true
 # Which 'chroma' colorscheme should be applied to the output?
 # Options are available here:
 #   https://github.com/alecthomas/chroma/tree/master/styles
-style: monokai
+style: dracula
 
 # Which 'chroma' "formatter" should be applied?
 # One of: "terminal", "terminal256", "terminal16m"
-formatter: terminal16m
+formatter: terminal256
 
 # Through which pager should output be piped? (Unset this key for no pager.)
 pager: less -FRX
@@ -22,7 +22,7 @@ pager: less -FRX
 #
 # Whenever cheatsheets share the same title (like 'tar'), the most local
 # cheatsheets (those which come later in this file) take precedent over the
-# less local sheets. This allows you to create your own "overides" for
+# less local sheets. This allows you to create your own "overrides" for
 # "upstream" cheatsheets.
 #
 # But what if you want to view the "upstream" cheatsheets instead of your own?
