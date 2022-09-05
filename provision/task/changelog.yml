@@ -45,7 +45,7 @@ tasks:
     desc: Generate tag changelog
     run: once
     cmds:
-      - git-chglog {{.APP_TAG}} --output {{.TMP_CHANGELOG_FILENAME}}
+      - git-chglog {{.APP_TAG}} > {{.TMP_CHANGELOG_FILENAME}}
     deps:
       - task: check:chglog
 
