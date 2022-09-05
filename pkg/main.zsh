@@ -14,7 +14,6 @@ function cheat::pkg::main::factory {
         source "${ZSH_CHEAT_PATH}"/pkg/linux.zsh
       ;;
     esac
-
     # shellcheck source=/dev/null
     source "${ZSH_CHEAT_PATH}"/pkg/helper.zsh
 
