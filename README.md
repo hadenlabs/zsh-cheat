@@ -12,7 +12,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-cheat)](https://github.com/hadenlabs/zsh-cheat/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/lint-code)](https://github.com/hadenlabs/zsh-cheat/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-cheat)](https://github.com/hadenlabs/zsh-cheat/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/lint-code)](https://github.com/hadenlabs/zsh-cheat/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/ci)](https://github.com/hadenlabs/zsh-cheat/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/test)](https://github.com/hadenlabs/zsh-cheat/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-cheat
 
@@ -22,7 +22,6 @@ zsh-cheat plugin for zsh.
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [zsh-core](https://github.com/hadenlabs/zsh-core)
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
