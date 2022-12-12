@@ -27,6 +27,12 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/lint-code
     url: https://github.com/hadenlabs/zsh-cheat/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/ci
+    url: https://github.com/hadenlabs/zsh-cheat/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-cheat/test
+    url: https://github.com/hadenlabs/zsh-cheat/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -41,7 +47,6 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  - [zsh-core](https://github.com/hadenlabs/zsh-core)
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
