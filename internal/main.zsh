@@ -19,4 +19,4 @@ function cheat::internal::main::factory {
 cheat::internal::main::factory
 
 if ! core::exists fzf; then core::install fzf; fi
-if ! core::exists cheat; then core::install cheat; fi
+if ! core::exists cheat; then go install "${CHEAT_PACKAGE_GO}"; fi

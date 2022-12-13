@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 function cheat::install {
-    cheat::internal::cheat::install
     cheat::post_install
 }
 
