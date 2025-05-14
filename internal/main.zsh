@@ -14,6 +14,8 @@ function cheat::internal::main::factory {
         source "${ZSH_CHEAT_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_CHEAT_PATH}"/internal/helper.zsh
 }
 
 cheat::internal::main::factory

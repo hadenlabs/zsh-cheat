@@ -14,6 +14,9 @@ ZSH_CHEAT_PATH=$(dirname "${0}")
 source "${ZSH_CHEAT_PATH}"/config/main.zsh
 
 # shellcheck source=/dev/null
+source "${ZSH_CHEAT_PATH}"/core/main.zsh
+
+# shellcheck source=/dev/null
 source "${ZSH_CHEAT_PATH}"/internal/main.zsh
 
 # shellcheck source=/dev/null

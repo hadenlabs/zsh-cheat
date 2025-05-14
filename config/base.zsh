@@ -11,5 +11,6 @@ export CHEAT_MESSAGE_YAY="Please install yay or use antibody bundle hadenlabs/zs
 export CHEAT_PACKAGE_NAME="cheat"
 export CHEAT_CHEATSHEETS=(
     hadenlabs/cheatsheet
+    cheat/cheatsheets
 )
 export CHEAT_PACKAGE_GO="github.com/cheat/cheat/cmd/cheat@latest"
